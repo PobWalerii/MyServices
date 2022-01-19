@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyServices</string>
+    <string name="but_kli_txt">Список Клиентов</string>
+    <string name="but_spec_txt">Специалисты</string>
+    <string name="but_waiting_txt">Лист Ожидания</string>
+    <string name="but_free_txt">Свободные часы приема</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="sur_name">Отчество</string>
+    <string name="phone">Телефон</string>
+    <string name="specyality">Специальность</string>
+    <string name="but_add_kli_txt">Новый</string>
+    <string name="but_filter_txt">Фильтр</string>
+    <string name="but_save_txt">Сохранить</string>
+    <string name="but_delete_txt">Delete</string>
+    <string name="but_exit_txt">Exit</string>
+    <string name="but_doc_txt">Record</string>
+    <string name="but_call_txt">Call</string>
+    <string name="but_edit_txt">Edit</string>
+    <string name="but_visit_txt">Visit</string>
+    <string name="but_check_txt">Check</string>
+    <string name="but_schedule_txt">Schedule</string>
+    <string name="but_yes_txt">Yes</string>
+    <string name="but_no_txt">No</string>
+    <string name="txt_delete_kli">Вы действительно хотите удалить текущего клиента из списка?</string>
+    <string name="txt_delete_spec">Вы действительно хотите удалить текущего специалиста из списка?</string>
+    <string name="but_check_clear_txt">Clear Check</string>
+    <string name="but_add_spec_txt">Добавить</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="txt_edit_kli">Клиент. Редактирование</string>
+    <string name="txt_new_kli">Клиент. Новый</string>
+    <string name="txt_edit_spec">Специалист. Редактирование</string>
+    <string name="txt_new_spec">Специалист. Новый</string>
+</resources>

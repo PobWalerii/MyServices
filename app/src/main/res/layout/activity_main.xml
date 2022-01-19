@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images3"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/but_waiting"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:text="@string/but_waiting_txt"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/but_free"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/but_free"
+        app:layout_constraintTop_toBottomOf="@+id/but_free" />
+
+    <Button
+        android:id="@+id/but_free"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/but_free_txt"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/but_spec"
+        app:layout_constraintStart_toStartOf="@+id/but_spec"
+        app:layout_constraintTop_toBottomOf="@+id/but_spec" />
+
+    <Button
+        android:id="@+id/but_spec"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSpecList"
+        android:text="@string/but_spec_txt"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/but_kli"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/but_kli"
+        app:layout_constraintTop_toBottomOf="@+id/but_kli" />
+
+    <Button
+        android:id="@+id/but_kli"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:onClick="onClickKliList"
+        android:text="@string/but_kli_txt"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

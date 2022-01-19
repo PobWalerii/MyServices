@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="KliCardView">
+        <attr name="kliid" format="integer"/>
+        <attr name="klitel" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="SpecCardView">
+        <attr name="specid" format="integer"/>
+        <attr name="spectel" format="string"/>
+    </declare-styleable>
+
+</resources>

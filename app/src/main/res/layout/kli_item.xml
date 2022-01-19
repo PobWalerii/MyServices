@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:background="#E3DBDB"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.example.castomclass.KliCardView
+        android:id="@+id/kliCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/button">
+
+        <ImageView
+            android:id="@+id/imageCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/kli_check" />
+
+        <Button
+            android:id="@+id/butName"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:onClick="onClickItem"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:iconGravity="start" />
+
+        <Button
+            android:id="@+id/butPhone"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:backgroundTint="@color/button"
+            android:text="Button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </com.example.castomclass.KliCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMnu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/butChek"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:text="@string/but_check_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:icon="@drawable/kli_check"
+            app:iconGravity="top"
+            app:iconTint="#7C3C3C" />
+
+        <Button
+            android:id="@+id/butDoc"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="77dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/but_doc_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:icon="?android:attr/actionModeFindDrawable"
+            app:iconGravity="top"
+            app:iconTint="#7C3C3C" />
+
+        <Button
+            android:id="@+id/butVisit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="154dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/but_visit_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:icon="@android:drawable/ic_menu_recent_history"
+            app:iconGravity="top"
+            app:iconTint="#7C3C3C" />
+
+        <Button
+            android:id="@+id/butEdit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="231dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/but_edit_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconGravity="top"
+            app:iconTint="#7C3C3C" />
+
+        <Button
+            android:id="@+id/butCall"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="308dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/but_call_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:icon="@android:drawable/ic_menu_call"
+            app:iconGravity="top"
+            app:iconTint="#7C3C3C" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

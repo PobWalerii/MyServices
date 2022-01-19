@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/but_new_kli"
+        android:icon="@drawable/kli_add"
+        android:orderInCategory="1"
+        android:title="@string/but_add_kli_txt" />
+    <item android:id="@+id/but_filter_kli"
+        android:icon="@drawable/filter"
+        android:title="@string/but_filter_txt"
+        android:orderInCategory="2"
+        />
+    <item android:id="@+id/but_check_clear_kli"
+        android:icon="@drawable/kli_check"
+        android:title="@string/but_check_clear_txt"
+        android:orderInCategory="3"
+        />
+</menu>
