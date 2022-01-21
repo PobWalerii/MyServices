@@ -2,6 +2,7 @@ package com.example.myservices
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity.END
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -9,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myservices.databinding.ActivityMainBinding
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.ActionBar
+import androidx.core.view.GravityCompat
 import kotlinx.coroutines.delay
 
 
@@ -29,12 +32,31 @@ class MainActivity : AppCompatActivity() {
         animAlpha = AnimationUtils.loadAnimation(this, R.anim.alpha)
         animRotate = AnimationUtils.loadAnimation(this, R.anim.rotate)
         animScale = AnimationUtils.loadAnimation(this, R.anim.scale)
-        animTranslate = AnimationUtils.loadAnimation(this, R.anim.translate)
+        //val animTranslate = AnimationUtils.loadAnimation(this, R.anim.translate)
 
         binding.butKli.startAnimation(animRotate)
         binding.butSpec.startAnimation(animAlpha)
+        binding.butServList.startAnimation(animAlpha)
         binding.butFree.startAnimation(animAlpha)
         binding.butWaiting.startAnimation(animRotate)
+
+        binding.nvSettings.setNavigationItemSelectedListener {
+            binding.drawer.closeDrawer(GravityCompat.END)
+            when(it.itemId){
+                R.id.but_settings_shedule -> {
+                    val intent= Intent(this,KliListActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.but_rouding_seting -> {
+                    val intent= Intent(this,SpecListActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+            true
+        }
+
+
+
     }
 //https://developer.android.com/training/data-storage/room
     //https://developer.android.com/codelabs/android-room-with-a-view-kotlin#0
@@ -72,10 +94,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-         android.R.id.home -> finish()
-
+            android.R.id.home -> finish()
+            R.id.settings -> {
+                binding.drawer.apply {
+                    if (this.isDrawerOpen(GravityCompat.END))
+                        this.closeDrawer(GravityCompat.END)
+                    else
+                        this.openDrawer(GravityCompat.END)
+                }
+            }
         }
         return true
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

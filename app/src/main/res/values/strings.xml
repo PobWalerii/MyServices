@@ -4,6 +4,9 @@
     <string name="but_spec_txt">Специалисты</string>
     <string name="but_waiting_txt">Лист Ожидания</string>
     <string name="but_free_txt">Свободные часы приема</string>
+    <string name="but_service_list_txt">Перечень услуг</string>
+    <string name="but_settings_shedule_txt">Графики/режимы работы</string>
+    <string name="but_rouding_seting_txt">Настройка округлений</string>
     <string name="last_name">Фамилия</string>
     <string name="first_name">Имя</string>
     <string name="sur_name">Отчество</string>
