@@ -48,16 +48,18 @@ class MainActivity : AppCompatActivity() {
     fun onClickSpecList(view: View){
         view.startAnimation(animScale)
         view.postDelayed({
+
             val intent= Intent(this,SpecListActivity::class.java)
             startActivity(intent)},450)
     }
 
-    fun startAnimate(){
-        //binding.butKli.startAnimation(animScale)
-        //binding.butSpec.startAnimation(animScale)
-        //binding.butWaiting.startAnimation(animScale)
-        //binding.butFree.startAnimation(animScale)
+    fun onClickServiceList(view: View){
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container_view,ServiceListFragment.newInstance())
+            .commit()
     }
+
 
     fun onClose(view: View) {
         finish()
